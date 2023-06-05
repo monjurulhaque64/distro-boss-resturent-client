@@ -9,10 +9,15 @@ import img2 from '../../../assets/home/slide2.jpg';
 import img3 from '../../../assets/home/slide3.jpg';
 import img4 from '../../../assets/home/slide4.jpg';
 import img5 from '../../../assets/home/slide5.jpg';
+import SectionTitle from '../../../Components/SectionTitle';
 
 const Catagory = () => {
     return (
-        <>
+        <section className='mt-10 mb-10'>
+            <SectionTitle
+            subHeading={"From 11.00am to 10.00pm"}
+            heading={"order Online"}
+            ></SectionTitle>
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}
@@ -31,7 +36,7 @@ const Catagory = () => {
                 <SwiperSlide><img src={img4} alt="" /><h3 className='text-2xl uppercase text-center -mt-20 text-white'>desserts</h3></SwiperSlide>
                 <SwiperSlide><img src={img5} alt="" /><h3 className='text-2xl uppercase text-center -mt-20 text-white'>Salads</h3></SwiperSlide>
             </Swiper>
-        </>
+        </section>
     );
 };
 
